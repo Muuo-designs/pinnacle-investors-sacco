@@ -1,169 +1,223 @@
-<!-- GitHub Pages deployment refresh -->
-<!DOCTYPE html>
-<html>
-    <head>
-            <meta name="google-site-verification" content="Se51X1WYaIdaZKnFG4cEBW8et79rO9J2z4gSxib3UJQ" />
-                      <title>Pinnacle Investors Sacco Homepage</title>
-                          </head>
-                              <!-- Circular Banner -->
-                              <div class="banner">
-                                  <div class="banner-circle">
-                                          <img src="pinnacle.png" alt="Pinnacle Investors Logo">
-                                                  <h1>PINNACLE INVESTORS</h1>
-                                                          <p>Together We Build Hope</p>
-                                                              </div>
-                                                              </div>
-                                                              <style>
-                                                               /* Circular Banner */
+<!DOCTYPE html>  <html>  
+    <head>  
+        <meta name="google-site-verification" content="Se51X1WYaIdaZKnFG4cEBW8et79rO9J2z4gSxib3UJQ" />  
+          <title>Pinnacle Investors Sacco Homepage</title>  
+    </head>  
+      <style>  
+      /* Navigation Menu */  .navbar {
+background-color
+padding: 10px 18px;
+margin: 0;
+border-radius: 0;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
 
-                                                               .banner{
-                                                                   display:flex;
-                                                                       justify-content:center;
-                                                                           align-items:center;
-                                                                               margin:30px 0;
-                                                                               }
+.nav-links {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+gap: 18px;
+flex-wrap: wrap;
+}
 
-                                                                               .banner-circle{
-                                                                                   width:320px;
-                                                                                       height:320px;
-                                                                                           border:8px:color:yellow;
-                                                                                               border-radius:50%;
-                                                                                                   background:#fff;
-                                                                                                       box-shadow:0 6px 20px rgba(0,0,0,0.15);
-                                                                                                           display:flex;
-                                                                                                               flex-direction:column;
-                                                                                                                   justify-content:center;
-                                                                                                                       align-items:center;
-                                                                                                                           text-align:center;
-                                                                                                                               padding:20px;
-                                                                                                                               }
+.nav-links a {
+color: blue;
+text-decoration: none;
+font-weight: bold;
+font-size: 16px;
+}
 
-                                                                                                                               .banner-circle img{
-                                                                                                                                   width:140px;
-                                                                                                                                       height:140px;
-                                                                                                                                           object-fit:contain;
-                                                                                                                                               margin-bottom:15px;
-                                                                                                                                               }
+.nav-links a:hover {
+color: #ff9800;
+}
 
-                                                                                                                                               .banner-circle h1{
-                                                                                                                                                   color:#ff9800;
-                                                                                                                                                       font-size:34px;
-                                                                                                                                                           margin:10px 0 5px;
-                                                                                                                                                               font-weight:bold;
-                                                                                                                                                               }
+</style>  <style>  
+    /* Mobile Menu */  
+  
+.menu-button {  
+    background-color: transparent;  
+    color: darkgreen;  
+    border: none;  
+    font-size: 18px;  
+    font-weight: bold;  
+    padding: 8px 10px;  
+    cursor: pointer;  
+}  
+  
+.nav-links {  
+    display: none;  
+    flex-direction: column;  
+    background-color:blue  
+    gap:12px;  
+    align-items: flex-start;  
+    margin-top: 12px;  
+      
+}  
+  
+.nav-links.show {  
+    display: flex;  
+}  
+  
+.nav-links a {  
+    color: blue   
+    text-decoration: none;  
+    font-weight: bold;  
+    font-size: 16px;  
+  
+}  
+  
+.nav-links a:hover {  
+    color: #ff9800;  
+      
+}  
+</style>  <!-- Navigation Menu -->
 
-                                                                                                                                                               .banner-circle p{
-                                                                                                                                                                   color:#2e8b57;
-                                                                                                                                                                       font-size:22px;
-                                                                                                                                                                           font-style:italic;
-                                                                                                                                                                               margin:0;
-                                                                                                                                                                               }
+<nav class="navbar">  <button class="menu-button" onclick="toggleMenu()">  
+    ☰ Menu  
+</button>
 
-                                                                                                                                                                               @media(max-width:600px){
+   <div class="nav-links" id="navLinks">  <a href="index.html">🏠 Home</a>  
 
-                                                                                                                                                                               .banner-circle{
-                                                                                                                                                                                   width:200px;
-                                                                                                                                                                                       height:200px;
-                                                                                                                                                                                       }
+<a href="about.html">ℹ️ About Us</a>  
 
-                                                                                                                                                                                       .banner-circle img{
-                                                                                                                                                                                           width:110px;
-                                                                                                                                                                                               height:110px;
-                                                                                                                                                                                               }
+<a href="offer.html">💼 Services</a>  
 
-                                                                                                                                                                                               .banner-circle h1{
-                                                                                                                                                                                                   font-size:18px;
-                                                                                                                                                                                                   }
+<a href="events.html">📅 Events</a>  
 
-                                                                                                                                                                                                   .banner-circle p{
-                                                                                                                                                                                                       font-size:16px;
-                                                                                                                                                                                                       }
+<a href="leadership.html">👥 Leadership</a>  
 
-                                                                                                                                                                                                       }
-                                                                                                                                                                                                          </style>
-                                                                                                                                                                                                             
-                                                                                                                                                                                                                 <body style="background-color:lightgrey;">             
-                                                                                                                                                                                                                       
-                                                                                                                                                                                                                            <h1 style="background-color:#0B3D91;
-                                                                                                                                                                                                                                       color:white;
-                                                                                                                                                                                                                                                  padding:15px;
-                                                                                                                                                                                                                                                             text-align:center;
-                                                                                                                                                                                                                                                                        border-radius:8px;">
-                                                                                                                                                                                                                                                                            Pinnacle Investors Sacco</h1>
-                                                                                                                                                                                                                                                                                   <hr>
-                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                  <h2 style="color:#0B3D91"> 🤝Welcome to Pinnacle Investors SACCO</h2>
-                                                                                                                                                                                                                                                                                                         
-                                                                                                                                                                                                                                                                                                                 
-                                                                                                                                                                                                                                                                                                                           <p>Empowering Members Through Savings, Investments, and Financial Growth.</p>
-                                                                                                                                                                                                                                                                                                                                     <hr>
-                                                                                                                                                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                                                                           <p> Pinnacle Investors SACCO is committed to providing secure, transparent, and member-focused financial solutions that promote economic growth and long-term prosperity.</p>
-                                                                                                                                                                                                                                                                                                                                             
-                                                                                                                                                                                                                                                                                                                                             <h3 style="color:#0B3D91;">Our Mission</h3>
-                                                                                                                                                                                                                                                                                                                                               <p>To empower our members through innovative savings, investment opportunities, and responsible financial services.</p>
-                                                                                                                                                                                                                                                                                                                                                 
-                                                                                                                                                                                                                                                                                                                                                 <h3 style="color:#0B3D91;">Our Vision</h3>
-                                                                                                                                                                                                                                                                                                                                                 <p>To be a trusted and leading SACCO that transforms lives through sustainable financial growth.</p>
-                                                                                                                                                                                                                                                                                                                                                   <h4 style="color:#0B3D91;"><i>Why Choose Us?</i></h4>
-                                                                                                                                                                                                                                                                                                                                                     <ol>
-                                                                                                                                                                                                                                                                                                                                                       <li> Secure and transparent operations.</li>
-                                                                                                                                                                                                                                                                                                                                                         <li>Affordable membership registration.</li>
-                                                                                                                                                                                                                                                                                                                                                           <li>Savings and investment opportunities.</li>
-                                                                                                                                                                                                                                                                                                                                                             <li>Member-focused services.</li>
-                                                                                                                                                                                                                                                                                                                                                               <li>Integrity, accountability, and excellence.</li>
-                                                                                                                                                                                                                                                                                                                                                               </ol>
+<a href="registration.html">📝 Registration</a>  
 
-                                                                                                                                                                                                                                                                                                                                                               <p>Join Pinnacle Investors SACCO today and take the first step towards a stronger financial future.</p>
+<a href="legal status.html">⚖️ Legal Status</a>  
 
-                                                                                                                                                                                                                                                                                                                                                                   <hr>
-                                                                                                                                                                                                                                                                                                                                                                       <section style="background-color:white;">
-                                                                                                                                                                                                                                                                                                                                                                             <nav><a href="about.html">About us</a></nav>
-                                                                                                                                                                                                                                                                                                                                                                             <nav><a href="offer.html">Our Services</a></nav>
-                                                                                                                                                                                                                                                                                                                                                                             </nav><a href="registration.html">Registration Requirements </a></nav>
-                                                                                                                                                                                                                                                                                                                                                                             <nav><a href="legal status.html">Legal Status&Compliance </a></nav>
-                                                                                                                                                                                                                                                                                                                                                                             <nav><a href="constitution.html">Constitution </a></na>
-                                                                                                                                                                                                                                                                                                                                                                             <nav><a href="events.html">News&Events</a></nav>
-                                                                                                                                                                                                                                                                                                                                                                             <nav><a href="leadership.html">Leadership</a></nav>
-                                                                                                                                                                                                                                                                                                                                                                             </section>
-                                                                                                                                                                                                                                                                                                                                                                               
+<a href="constitution.html">📜 Constitution</a>
 
-                                                                                                                                                                                                                                                                                                                                                                                     </body>
-                                                                                                                                                                                                                                                                                                                                                                                     </html>  
+</div>  </nav>  
+  <h2 style="color:#0B3D91"> 🤝Welcome to Pinnacle Investors SACCO💰💵</h2>  <p>Empowering Members Through Savings, Investments, and Financial Growth.</p>  
+      <hr>  
+<!-- Circular Banner -->
 
-                                                                                                                                                                                                                                                                                                                                                                                     <footer style="background:#0B4EA2; color:white; padding:15px; margin-top:20px;">
+<div class="banner">  
+    <div class="banner-circle">  
+        <img src="/pinnacle.png" alt="Pinnacle Investors Logo">  
+       <h1>  
+           Pinnacle Investors   
+       </h1>   
+        <p>Together We Build Hope</p>  
+    </div>  
+</div>  
+<style>  
+ /* Circular Banner */  .banner{
+display:flex;
+justify-content:center;
+align-items:center;
+margin:30px 0;
+}
 
+.banner-circle{
+width:320px;
+height:320px;
+border:8px:color:yellow;
+border-radius:50%;
+background:#fff;
+box-shadow:0 6px 20px rgba(0,0,0,0.15);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
 
-                                                                                                                                                                                                                                                                                                                                                                                     <!-- Two Columns -->
-                                                                                                                                                                                                                                                                                                                                                                                     <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px; font-size:14px;">
+.banner-circle img{
+width:140px;
+height:140px;
+object-fit:contain;
+margin-bottom:15px;
+}
 
-                                                                                                                                                                                                                                                                                                                                                                                     <div>           ==
-                                                                                                                                                                                                                                                                                                                                                                                     <b>Quick Links</b><br><br>
+.banner-circle h1{
+color:#ff9800;
+font-size:34px;
+margin:10px 0 5px;
+font-weight:bold;
+}
 
-                                                                                                                                                                                                                                                                                                                                                                                     <a href="about.html" style="color:white;text-decoration:none;">About Us</a><br>
+.banner-circle p{
+color:#2e8b57;
+font-size:22px;
+font-style:italic;
+margin:0;
+}
 
-                                                                                                                                                                                                                                                                                                                                                                                     <a href="offer.html" style="color:white;text-decoration:none;">Services</a><br>
+@media(max-width:600px){
 
-                                                                                                                                                                                                                                                                                                                                                                                     <a href="registration.html" style="color:white;text-decoration:none;">Registration</a><br>
+.banner-circle{
+width:200px;
+height:200px;
+}
 
-                                                                                                                                                                                                                                                                                                                                                                                     <a href="events.html" style="color:white;text-decoration:none;">News & Events</a>
+.banner-circle img{
+width:110px;
+height:110px;
+}
 
-                                                                                                                                                                                                                                                                                                                                                                                     </div>
+.banner-circle h1{
+font-size:18px;
+}
 
-                                                                                                                                                                                                                                                                                                                                                                                     <div>
+.banner-circle p{
+font-size:16px;
+}
 
-                                                                                                                                                                                                                                                                                                                                                                                     <b>Contact</b><br><br>
-                                                                                                                                                                                                                                                                                                                                                                                     📞+254746546489<br>
-                                                                                                                                                                                                                                                                                                                                                                                       📧:pinnacleinvestors@gmail.com<br>
-                                                                                                                                                                                                                                                                                                                                                                                           📍 Murang'a County, Kenya
-                                                                                                                                                                                                                                                                                                                                                                                           </div>
-                                                                                                                                                                                                                                                                                                                                                                                           </div>
-                                                                                                                                                                                                                                                                                                                                                                                           <hr style="border:1px solid rgba(255,255,255,.3);">
+}
+</style>
 
-                                                                                                                                                                                                                                                                                                                                                                                           <p style="text-align:center; font-size:12px; margin:0;">
-                                                                                                                                                                                                                                                                                                                                                                                           &copy; 2026 Pinnacle Investors SACCO. All Rights Reserved.
-                                                                                                                                                                                                                                                                                                                                                                                           </p>
+<body style="background-color:white;">               
+<div style="text-align:center;  
+        padding:12px;  
+        color:#666;  
+        font-style:italic;">
 
+Pinnacle Investors SACCO is committed to providing secure, transparent, and member-focused financial solutions that promote economic growth and long-term prosperity.</div>
 
-                                                                                                                                                                                                                                                                                                                                                                                           </body>
-                                                                                                                                                                                                                                                                                                                                                                                           </html>
+  <hr>  
+<h3 style="color:#0B3D91;">Our Mission</h3>  
+  <p>To empower our members through innovative savings, investment opportunities, and responsible financial services.</p>  <h3 style="color:#0B3D91;">Our Vision</h3>  
+<p>To be a trusted and leading SACCO that transforms lives through sustainable financial growth.</p>  
+  <h4 style="color:#0B3D91;"><i>Why Choose Us?</i></h4>  
+  <ol>  
+  <li> Secure and transparent operations.</li>  
+  <li>Affordable membership registration.</li>  
+  <li>Savings and investment opportunities.</li>  
+  <li>Member-focused services.</li>  
+  <li>Integrity, accountability, and excellence.</li>  
+</ol>  <p>Join Pinnacle Investors SACCO today and take the first step towards a stronger financial future.</p>  <hr>  
+<hr>
+
+<footer style="background-color:darkgreen; color:white; padding:15px; margin-top:20px;">  <!-- Two Columns -->  <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px; font-size:14px;">  <div>           ==  
+<b>Quick Links</b><br><br>  <a href="about.html" style="color:white;text-decoration:none;">About Us</a><br>
+
+<a href="offer.html" style="color:white;text-decoration:none;">Services</a><br>
+
+<a href="registration.html" style="color:white;text-decoration:none;">Registration</a><br>
+
+<a href="events.html" style="color:white;text-decoration:none;">News & Events</a>
+
+</div>  <div>  <b>Contact</b><br><br>
+📞+254746546489<br>
+📧:pinnacleinvestors@gmail.com<br>
+📍 Murang'a County, Kenya
+
+</div>  
+</div>  
+<hr style="border:1px solid rgba(255,255,255,.3);">  <p style="text-align:center; font-size:12px; margin:0;">  
+&copy; 2026 Pinnacle Investors SACCO. All Rights Reserved.  
+</p>  <script>  
+function toggleMenu() {  
+    document.getElementById("navLinks").classList.toggle("show");  
+}  
+</script>  </body>  
+</html>
